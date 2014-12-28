@@ -7,15 +7,13 @@ def draw():
     anton = turtle.Turtle()
     anton.shape("turtle")
     anton.color("green")
-    anton.forward(100)
-    anton.right(50)
-    anton.forward(100)
-    anton.right(50)
-    anton.forward(100)
-    anton.right(50)
-    anton.forward(100)
-    anton.right(50)
 
+    for i in range(0,36):
+        anton.right(10)
+        for i in range (0,4):
+            anton.forward(100)
+            anton.right(90)
+    
     window.exitonclick()
 
 
